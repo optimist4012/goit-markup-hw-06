@@ -422,7 +422,9 @@ img {
 .footer-soc-link:hover, .footer-soc-link:focus {
     background-color: var(--footer-icon);
 }
-
+.footer-form {
+    padding-left: 80px;
+}
 .footer-form-text {
     margin-bottom: 16px;
     font-weight: 500;
@@ -469,6 +471,7 @@ img {
     border-radius: 4px;
 }
 .footer-icon {
+    fill: var(--white-color);
     margin-left: 16px;
 }
 /* Fitters */
@@ -580,7 +583,7 @@ img {
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding: 24px 24px 24px;
 }
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(0);
@@ -626,7 +629,7 @@ img {
     letter-spacing: 0.04em;
     color: var(--customers-color);
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 .modal-title {
     font-weight: 500;
@@ -653,10 +656,6 @@ img {
 .modal-input:focus + .form-icon {
     fill: var(--logo-color);
 }
-.input-label span {
-    display: block;
-    margin-bottom: 4px;
-}
 .form-icon {
     position: absolute;
     left: 16px;
@@ -664,11 +663,21 @@ img {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-title {
+    display: block;
+    margin-bottom: 4px;
+}
 .input-wrap {
     position: relative;
 }
 .modal-comment {
     margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--customers-color);
+    display: block;
+    margin-bottom: 8px;
 }
 .user-comment {
     padding-left: 16px;
@@ -678,12 +687,12 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    padding: 8px 16px;
     padding: 10px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
     background-color: transparent;
+    padding: 8px 16px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -723,6 +732,7 @@ img {
     fill: var(--text-color);
 }
 .send-btn {
+    margin: 0 auto;
     display: block;
     min-width: 169px;
     height: 56px;
