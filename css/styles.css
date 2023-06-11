@@ -583,7 +583,7 @@ img {
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 24px 24px 24px;
+    padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(0);
@@ -601,7 +601,6 @@ img {
     background-color: var(--btn-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    padding: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -628,8 +627,10 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--customers-color);
+}
+.input-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .modal-title {
     font-weight: 500;
@@ -662,10 +663,6 @@ img {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input-title {
-    display: block;
-    margin-bottom: 4px;
 }
 .input-wrap {
     position: relative;
@@ -708,7 +705,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--customers-color);
-    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -726,7 +722,7 @@ img {
     justify-content: center;
     fill: transparent;
 }
-.modal-checkbox:checked span{
+.modal-checkbox:checked + label > .check-icon{
     background-color: var(--background-color);
     border: none;
     fill: var(--text-color);
