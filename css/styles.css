@@ -674,10 +674,9 @@ img {
     letter-spacing: 0.04em;
     color: var(--customers-color);
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .user-comment {
-    margin-bottom: 16px;
     width: 100%;
     height: 120px;
     font-size: 12px;
